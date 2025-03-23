@@ -56,7 +56,7 @@ fn main() -> io::Result<()> {
     println!("Are you sure? Please double check! (y/n or yes/no)");
 
     if let true = yes_or_no()? {
-        println!("Deleting everything files inside {}", s);
+        println!("Deleting every files inside {}", s);
         remove_files(s)?;
     } else { println!("Aborted"); }
     Ok(())
